@@ -11,7 +11,6 @@ namespace MVCMEF.Plugin02.Controllers
         public ActionResult Index()
         {
             return View("~/Plugins/Plugin02Views/Home/Index.cshtml");
-
         }
 
         public ActionResult About()

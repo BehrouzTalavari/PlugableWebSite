@@ -34,8 +34,6 @@ namespace MVCMEF.HostApp.Models
             {
                 string controllerClassName = controllerName + "Controller";
 
-                
-
                 var exportDs = this.container.GetExports<IController, IDictionary<string, object>>();
 
                 Lazy<IController, IDictionary<string, object>> export = 

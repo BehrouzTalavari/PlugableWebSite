@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Composition;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.Composition;
 using System.Web.Mvc;
 
 namespace MVCMEF.Plugin01
 {
     [Export(typeof(IController))]
     [ExportMetadata("controllerName", "Demo")]
+    [ExportMetadata("MenuName", "DemoMenu")]
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class DemoController : Controller
     {
